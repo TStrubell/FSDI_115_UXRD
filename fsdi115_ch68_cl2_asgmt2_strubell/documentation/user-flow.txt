@@ -1,0 +1,44 @@
+SGNG CUSTOMER USER FLOW
+
+START
+
+↓
+Home Page
+
+↓
+Browse Catalog
+
+↓
+Select Product
+
+↓
+View Product Details
+
+↓
+Add To Cart
+
+↓
+View Cart
+
+↓
+Checkout
+
+↓
+Order Confirmation
+
+↓
+END
+
+Alternative Path
+
+Home
+ ↓
+Search Products
+ ↓
+Product Details
+ ↓
+Add To Cart
+ ↓
+Checkout
+ ↓
+Confirmation

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop all SGnG leather goods — wallets, bags, belts, and accessories handcrafted for the modern explorer." />
+  <title>Shop All Products – SGnG</title>
+
+  <!--
+    PATH NOTE:
+    This file lives at: pages/catalog.html
+    CSS lives at:       static/css/styles.css
+    Images live at:     static/images/
+    JS lives at:        static/js/
+    "../" goes up one level from pages/ to the project root.
+  -->
+  <link rel="stylesheet" href="../static/css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER — Identical nav structure to home.html
+       Flexbox: logo left | nav links right
+  ============================================================ -->
+  <header class="site-header" role="banner">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+
+      <!-- Logo / Brand -->
+      <a href="home.html" class="nav-logo" aria-label="SGnG – Go to homepage">
+        <span class="logo-mark">SGnG</span>
+        <span class="logo-sub">Strubell Goods &amp; Gear</span>
+      </a>
+
+      <!-- Hamburger toggle — only visible on mobile -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Nav links -->
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li role="listitem"><a href="home.html#categories" class="nav-link">Collections</a></li>
+        <li role="listitem"><a href="catalog.html"         class="nav-link" aria-current="page">Shop</a></li>
+        <li role="listitem"><a href="about.html"           class="nav-link">Our Story</a></li>
+        <li role="listitem">
+          <a href="cart.html" class="nav-link nav-cart" aria-label="Shopping cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <circle cx="9"  cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            Cart
+            <span class="cart-badge" id="cartCount" aria-live="polite">0</span>
+          </a>
+        </li>
+        <li role="listitem">
+          <button class="theme-btn" id="themeToggle" aria-label="Toggle dark/light mode">🌙</button>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN — Catalog page content
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- Page header -->
+    <section class="section-header" style="padding: 2.5rem 1.5rem 0; max-width: 1280px; margin: 0 auto; text-align: center;">
+      <h1 class="section-title">All Products</h1>
+      <p class="section-sub">
+        Handcrafted leather goods for the modern explorer —
+        every piece built to last a lifetime.
+      </p>
+    </section>
+
+    <!-- ----------------------------------------------------------
+         CATALOG GRID
+         Uses .catalog (Flexbox from original Class3 CSS — kept)
+         Watermark background: logo_watermark.png
+         Each .card uses .card-actions with two buttons:
+           .details-btn  → links to the product detail page
+           .add-cart-btn → adds item to cart via cart.js
+    ---------------------------------------------------------- -->
+    <section class="catalog" aria-label="Product catalog">
+
+      <!-- ── Product Card 1: Wallet ── -->
+      <article class="card" aria-label="Classic Leather Wallet — $89.00">
+        <img
+          src="../static/images/wallet.jpg"
+          alt="Classic Leather Bifold Wallet in Cognac Brown, open showing card slots"
+          loading="lazy"
+        />
+        <h2>Classic Leather Wallet</h2>
+        <p>Full-grain cognac leather. Slim profile. 6 card slots.</p>
+        <p class="price">$89.00</p>
+        <div class="card-actions">
+          <a href="../catalog/wallet.html" class="details-btn">Details</a>
+          <button
+            class="add-cart-btn"
+            onclick="addToCart('Classic Leather Wallet', 89.00)"
+            aria-label="Add Classic Leather Wallet to cart"
+          >Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- ── Product Card 2: Belt ── -->
+      <article class="card" aria-label="Heritage Leather Belt — $120.00">
+        <img
+          src="../static/images/belt.jpg"
+          alt="Heritage Leather Belt in Cognac with gold buckle"
+          loading="lazy"
+        />
+        <h2>Heritage Leather Belt</h2>
+        <p>Vegetable-tanned full-grain leather. Solid brass buckle.</p>
+        <p class="price">$120.00</p>
+        <div class="card-actions">
+          <a href="../catalog/belt.html" class="details-btn">Details</a>
+          <button
+            class="add-cart-btn"
+            onclick="addToCart('Heritage Leather Belt', 120.00)"
+            aria-label="Add Heritage Leather Belt to cart"
+          >Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- ── Product Card 3: Keychain ── -->
+      <article class="card" aria-label="MD Minimalist Keychain — $29.00">
+        <img
+          src="../static/images/keychain.jpg"
+          alt="Minimalist leather keychain in tan, handcrafted"
+          loading="lazy"
+        />
+        <h2>MD Minimalist Keychain</h2>
+        <p>Hand-stitched tan leather. Solid brass ring. Built to last.</p>
+        <p class="price">$29.00</p>
+        <div class="card-actions">
+          <a href="../catalog/keychain.html" class="details-btn">Details</a>
+          <button
+            class="add-cart-btn"
+            onclick="addToCart('MD Minimalist Keychain', 29.00)"
+            aria-label="Add MD Minimalist Keychain to cart"
+          >Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- ── Product Card 4: Bag ── -->
+      <article class="card" aria-label="Expedition Travel Bag — $349.00">
+        <img
+          src="../static/images/bag.jpg"
+          alt="Expedition Leather Travel Bag in dark brown, large capacity"
+          loading="lazy"
+        />
+        <h2>Expedition Travel Bag</h2>
+        <p>Waxed full-grain leather. Brass hardware. Weekend-ready capacity.</p>
+        <p class="price">$349.00</p>
+        <div class="card-actions">
+          <a href="../catalog/bag.html" class="details-btn">Details</a>
+          <button
+            class="add-cart-btn"
+            onclick="addToCart('Expedition Travel Bag', 349.00)"
+            aria-label="Add Expedition Travel Bag to cart"
+          >Add to Cart</button>
+        </div>
+      </article>
+
+    </section><!-- /catalog -->
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER — Identical structure to home.html
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <p class="footer-logo-text">SGnG</p>
+        <p class="footer-tagline">
+          Strubell Goods &amp; Gear
+          <em>Crafted for the Modern Explorer</em>
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Shop</h4>
+          <ul role="list">
+            <li><a href="catalog.html">All Products</a></li>
+            <li><a href="catalog.html">Wallets</a></li>
+            <li><a href="catalog.html">Bags</a></li>
+            <li><a href="catalog.html">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Company</h4>
+          <ul role="list">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Craftsmanship</a></li>
+            <li><a href="about.html">Sustainability</a></li>
+            <li><a href="about.html">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Support</h4>
+          <ul role="list">
+            <li><a href="cart.html">Shipping &amp; Returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer-newsletter">
+        <h4 class="footer-col-heading">Stay in the Loop</h4>
+        <p>New arrivals, stories, and gear — straight to your inbox.</p>
+        <form class="newsletter-form" action="#" method="post"
+              aria-label="Email newsletter signup" onsubmit="return false;">
+          <label for="newsletterEmail" class="sr-only">Email address</label>
+          <input type="email" id="newsletterEmail" name="email"
+                 placeholder="your@email.com" class="newsletter-input"
+                 required autocomplete="email" />
+          <button type="submit" class="btn btn--primary newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Strubell Goods &amp; Gear. All rights reserved.</p>
+      <p>FSDI 115 &ndash; Interaction Design &middot; Tim Strubell &middot; Fall 2026</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT — load cart.js and theme.js
+  ============================================================ -->
+  <script src="../static/js/cart.js"></script>
+  <script src="../static/js/theme.js"></script>
+
+  <!-- Mobile nav toggle + cart badge update -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ── Mobile hamburger nav ── */
+      var toggle = document.getElementById('navToggle');
+      var menu   = document.getElementById('navMenu');
+
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var isOpen = menu.classList.toggle('nav-menu--open');
+          toggle.setAttribute('aria-expanded', String(isOpen));
+          toggle.classList.toggle('nav-toggle--open', isOpen);
+          document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        menu.querySelectorAll('.nav-link').forEach(function (link) {
+          link.addEventListener('click', function () {
+            menu.classList.remove('nav-menu--open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.classList.remove('nav-toggle--open');
+            document.body.style.overflow = '';
+          });
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+            menu.classList.remove('nav-menu--open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.classList.remove('nav-toggle--open');
+            document.body.style.overflow = '';
+          }
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') {
+            menu.classList.remove('nav-menu--open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.classList.remove('nav-toggle--open');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+
+      /* ── Cart badge: read from localStorage on load ── */
+      var badge = document.getElementById('cartCount');
+      if (badge) {
+        var cart  = JSON.parse(localStorage.getItem('sgng-cart') || '[]');
+        var total = cart.reduce(function (sum, i) { return sum + i.qty; }, 0);
+        badge.textContent = total;
+      }
+
+    })();
+
+    /* ── Add to Cart: updates localStorage + badge + alert ── */
+    function addToCart(name, price) {
+      var cart = JSON.parse(localStorage.getItem('sgng-cart') || '[]');
+      var existing = cart.find(function (i) { return i.name === name; });
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ name: name, price: price, qty: 1 });
+      }
+      localStorage.setItem('sgng-cart', JSON.stringify(cart));
+
+      /* Update badge */
+      var total = cart.reduce(function (sum, i) { return sum + i.qty; }, 0);
+      var badge = document.getElementById('cartCount');
+      if (badge) badge.textContent = total;
+
+      alert(name + ' added to cart!');
+    }
+  </script>
+
+</body>
+</html>

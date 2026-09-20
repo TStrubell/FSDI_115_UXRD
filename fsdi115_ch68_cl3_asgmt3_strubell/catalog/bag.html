@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedition Travel Bag - SGnG</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="../static/images/sgng_logo.png" class="logo" alt="SGnG Logo">
+
+        <div class="navbar-nav">
+            <a class="nav-link" href="../pages/home.html">Home</a>
+            <a class="nav-link" href="../pages/catalog.html">Catalog</a>
+            <a class="nav-link" href="../pages/about.html">About</a>
+            <a class="nav-link" href="../pages/cart.html">Cart</a>
+        </div>
+
+        <button id="theme-toggle" class="theme-btn">
+            <span id="theme-icon">🌙</span>
+        </button>
+    </nav>
+
+    <main class="details">
+        <img src="../static/images/bag.jpg" class="details-img" alt="Expedition Travel Bag">
+
+        <h1>Expedition Travel Bag</h1>
+        <p class="price">$349.00</p>
+
+        <ul class="features">
+            <li>Premium full-grain leather</li>
+            <li>Reinforced stitching</li>
+            <li>Adjustable shoulder strap</li>
+            <li>Perfect for weekend travel</li>
+        </ul>
+
+        <button class="add-cart-btn" onclick="addToCart('Expedition Travel Bag', 349)">
+            Add to Cart
+        </button>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Strubell Goods & Gear — Premium Handmade Leather Goods</p>
+    </footer>
+
+    <script src="../static/js/cart.js"></script>
+    <script src="../static/js/theme.js"></script>
+</body>
+</html>

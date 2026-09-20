@@ -1,0 +1,9 @@
+[LOGO]
+
+Search Bar
+
+Filter Sidebar
+
+Product Grid
+
+Pagination

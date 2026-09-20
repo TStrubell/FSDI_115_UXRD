@@ -1,0 +1,28 @@
+USABILITY TESTING
+
+Tester:
+Riley Stone
+
+Task:
+Purchase a leather wallet.
+
+What Was Easy?
+
+- Finding products
+- Browsing categories
+- Adding products to cart
+
+What Was Confusing?
+
+- Product filter visibility
+- Cart icon location
+
+Recommended Improvements
+
+- Make filters more visible
+- Increase cart icon size
+- Add product reviews section
+
+Testing Summary
+
+The tester successfully completed the purchase flow without assistance. Minor navigation improvements were recommended.

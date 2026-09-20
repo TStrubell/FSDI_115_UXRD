@@ -1,0 +1,11 @@
+[LOGO]
+
+Navigation
+
+Hero Banner
+
+Featured Products
+
+Shop Now Button
+
+Footer

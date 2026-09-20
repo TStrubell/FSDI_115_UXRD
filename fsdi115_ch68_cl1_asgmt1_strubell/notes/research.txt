@@ -1,0 +1,141 @@
+ASSIGNMENT 1: UX COMPETITIVE ANALYSIS & USER RESEARCH 
+
+PROJECT NAME: Strubell Goods & Gear (SGnG)
+
+TEAM MEMBER: Tim Strubell
+
+PROJECT DESCRIPTION:
+  Strubell Goods & Gear is a premium handmade leather goods brand focused on providing customers with high-quality wallets, belts, keychains, and travel accessories through a modern e-commerce experience.
+
+=========================================================
+SECTION 1 - PROJECT INFORMATION
+=========================================================
+
+PROJECT GOAL:
+  The objective of SGnG is to create an intuitive, visually appealing, and responsive e-commerce platform that highlights craftsmanship while providing a frictionless shopping experience.
+
+TARGET AUDIENCE:
+
+- Professionals seeking premium accessories
+- Travelers
+- Outdoor enthusiasts
+- Customers interested in handcrafted products
+- Gift shoppers
+
+Primary User Goals
+
+1. Browse products easily.
+2. Learn about product craftsmanship.
+3. Compare product options.
+4. Purchase products quickly.
+5. Complete checkout with minimal effort.
+
+=========================================================
+SECTION 2 - COMPETITIVE ANALYSIS
+=========================================================
+
+COMPETITOR #1: BELLROY
+
+What Bellroy Does Well:
+
+  - Intuitive navigation
+  - Minimalist user interface
+  - High-quality photography
+  - Responsive mobile experience
+  - Fast browsing experience
+
+Usability Issues
+
+  - Product details occasionally require excessive scrolling.
+  - Some informational content may overwhelm new users.
+
+Ideas to Incorporate into SGnG
+
+  - Clean product cards
+  - Larger images
+  - Simplified navigation
+  - Sticky navigation bar
+  - Streamlined checkout flow
+
+---------------------------------------------------------
+
+COMPETITOR #2: SADDLEBACK LEATHER
+
+What Saddleback Leather Does Well
+
+  - Strong storytelling
+  - Detailed product descriptions
+  - Effective trust-building
+  - Showcases craftsmanship
+
+Usability Issues
+
+  - Content-heavy pages
+  - Navigation could be simplified
+  - Product discovery can require extra effort
+
+Ideas to Incorporate into SGnG
+
+  - Highlight craftsmanship
+  - Present material details clearly
+  - Showcase durability
+  - Create engaging brand stories
+
+---------------------------------------------------------
+
+COMPETITOR #3: HUCKBERRY
+
+What Huckberry Does Well
+
+  - Modern website design
+  - Excellent product discovery
+  - Consistent branding
+  - Effective product recommendations
+
+Usability Issues
+
+  - Large catalog may create decision fatigue.
+  - Promotional content can distract from purchasing flow.
+
+Ideas to Incorporate into SGnG
+
+  - Product recommendations
+  - Curated collections
+  - Improved filtering options
+  - Responsive catalog layout
+
+=========================================================
+SECTION 3 - REFLECTION
+=========================================================
+
+Which Application Provides the Best UX?
+
+  Bellroy provides the best overall user experience because of its clean visual design, intuitive navigation, and strong mobile responsiveness.
+
+Common UX Patterns Observed
+
+  - Large product images
+  - Clear product descriptions
+  - Consistent branding
+  - Simple navigation systems
+  - Mobile-first layouts
+  - Streamlined shopping experiences
+
+Improvements That Will Make the Biggest Difference
+
+  1. Responsive design implementation.
+  2. Better product presentation.
+  3. Simplified checkout process.
+  4. Improved navigation structure.
+  5. Enhanced mobile usability.
+
+Top Three Features Planned for SGnG
+
+  1. Responsive product catalog.
+  2. Detailed product pages.
+  3. Streamlined cart and checkout functionality.
+
+=========================================================
+CONCLUSION
+=========================================================
+  The competitive analysis demonstrates that successful e-commerce experiences prioritize usability, responsiveness, visual clarity, and customer trust. SGnG will combine the strongest elements from Bellroy, Saddleback Leather, and Huckberry to create a premium shopping experience that reflects the brand’s craftsmanship and quality standards.

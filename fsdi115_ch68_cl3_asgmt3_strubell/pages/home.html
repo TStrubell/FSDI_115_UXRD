@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Strubell Goods & Gear — Handcrafted leather goods built for adventure and built to last." />
+  <title>SGnG - Strubell Goods &amp; Gear</title>
+
+  <!--
+    PATH NOTE:
+    This file lives at: pages/home.html
+    CSS lives at:       static/css/styles.css
+    Images live at:     static/images/
+    JS lives at:        static/js/
+    "../" goes up one level from pages/ to the project root.
+  -->
+  <link rel="stylesheet" href="../static/css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER — Site-wide sticky navigation
+       Flexbox: space-between for logo vs nav links
+  ============================================================ -->
+  <header class="site-header" role="banner">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+
+      <!-- Logo / Brand — text wordmark -->
+      <a href="home.html" class="nav-logo" aria-label="SGnG - Go to homepage">
+        <span class="logo-mark">SGnG</span>
+        <span class="logo-sub">Strubell Goods &amp; Gear</span>
+      </a>
+
+      <!-- Hamburger toggle — only visible on mobile (CSS controls display) -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Nav links — Flexbox row on desktop, slide-in drawer on mobile -->
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li role="listitem"><a href="#categories"     class="nav-link">Collections</a></li>
+        <li role="listitem"><a href="catalog.html"    class="nav-link">Shop</a></li>
+        <li role="listitem"><a href="about.html"      class="nav-link">Our Story</a></li>
+        <li role="listitem">
+          <a href="cart.html" class="nav-link nav-cart" aria-label="Shopping cart">
+            <!-- Cart SVG icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <circle cx="9"  cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            Cart
+            <span class="cart-badge" id="cartCount" aria-live="polite">0</span>
+          </a>
+        </li>
+        <!-- Theme toggle button — controlled by static/js/theme.js -->
+        <li role="listitem">
+          <button class="theme-btn" id="themeToggle" aria-label="Toggle dark/light mode">🌙</button>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN — Primary page content
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------
+         HERO SECTION
+         Flexbox: text left (55%) | product image right (45%)
+         On mobile: stacks to single column
+    ---------------------------------------------------------- -->
+    <section class="hero" aria-label="Hero — Strubell Goods &amp; Gear">
+
+      <!-- Left column: text content -->
+      <div class="hero-content">
+        <p class="hero-eyebrow">New Collection — Fall 2026</p>
+        <h1 class="hero-heading">
+          Goods &amp; Gear<br />
+          for the Modern Explorer
+        </h1>
+        <p class="hero-subheading">
+          Handcrafted leather goods built for adventure and built to last.
+          Every stitch intentional. Every product timeless.
+        </p>
+        <div class="hero-actions">
+          <a href="catalog.html" class="btn btn--primary">Shop Now</a>
+          <a href="about.html"   class="btn btn--ghost">Our Story</a>
+        </div>
+      </div>
+
+      <!-- Right column: product image -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-img-wrap">
+          <!--
+            Using existing wallet.jpg as hero image.
+            Replace with a different image by updating the src below.
+          -->
+          <img
+            src="../static/images/wallet.jpg"
+            alt="Classic Leather Bifold Wallet in Cognac Brown on a dark surface"
+            class="hero-img"
+            loading="eager"
+          />
+        </div>
+        <!-- Decorative amber accent square -->
+        <div class="hero-accent"></div>
+      </div>
+
+    </section>
+
+    <!-- ----------------------------------------------------------
+         TRUST STRIP
+         Flexbox: four trust badges in a row
+         Wraps to 2x2 on mobile
+    ---------------------------------------------------------- -->
+    <section class="trust-strip" aria-label="Why shop with SGnG">
+      <ul class="trust-list" role="list">
+
+        <li class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="3" width="15" height="13" rx="1"></rect>
+            <path d="M16 8h4l3 5v3h-7V8z"></path>
+            <circle cx="5.5"  cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+          <span>Free Shipping Over $75</span>
+        </li>
+
+        <li class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>Lifetime Craftsmanship Guarantee</span>
+        </li>
+
+        <li class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <span>Secure Checkout · 256-bit SSL</span>
+        </li>
+
+        <li class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <polyline points="1 4 1 10 7 10"></polyline>
+            <path d="M3.51 15a9 9 0 1 0 .49-4.5"></path>
+          </svg>
+          <span>30-Day Free Returns</span>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ----------------------------------------------------------
+         SHOP BY COLLECTION — Category Cards
+         Flexbox: three equal cards in a row
+         On tablet: 3 smaller cards; on mobile: stacks vertically
+    ---------------------------------------------------------- -->
+    <section class="categories" id="categories" aria-labelledby="cat-heading">
+      <div class="section-header">
+        <h2 id="cat-heading" class="section-title">Shop by Collection</h2>
+        <p class="section-sub">
+          Explore our handcrafted leather goods — designed for durability,
+          refined for style.
+        </p>
+      </div>
+
+      <ul class="category-grid" role="list">
+
+        <!-- Category: Wallets -->
+        <li class="category-card" role="listitem">
+          <a href="catalog.html" class="category-link" aria-label="Browse Wallets">
+            <div class="category-img-wrap">
+              <img
+                src="../static/images/wallet.jpg"
+                alt="Collection of handcrafted leather wallets"
+                class="category-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-info">
+              <h3 class="category-name">Wallets</h3>
+              <span class="category-count">2 products</span>
+              <span class="category-arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </li>
+
+        <!-- Category: Bags -->
+        <li class="category-card" role="listitem">
+          <a href="catalog.html" class="category-link" aria-label="Browse Bags">
+            <div class="category-img-wrap">
+              <img
+                src="../static/images/bag.jpg"
+                alt="Collection of handcrafted leather bags"
+                class="category-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-info">
+              <h3 class="category-name">Bags</h3>
+              <span class="category-count">1 product</span>
+              <span class="category-arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </li>
+
+        <!-- Category: Accessories -->
+        <li class="category-card" role="listitem">
+          <a href="catalog.html" class="category-link" aria-label="Browse Accessories">
+            <div class="category-img-wrap">
+              <img
+                src="../static/images/belt.jpg"
+                alt="Collection of leather accessories including belts and keychains"
+                class="category-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-info">
+              <h3 class="category-name">Accessories</h3>
+              <span class="category-count">2 products</span>
+              <span class="category-arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ----------------------------------------------------------
+         FEATURED PRODUCTS
+         Flexbox: 4-column flex-wrap grid
+         On tablet: 2 columns; on mobile: horizontal card layout
+    ---------------------------------------------------------- -->
+    <section class="featured-products" id="catalog" aria-labelledby="feat-heading">
+      <div class="section-header">
+        <h2 id="feat-heading" class="section-title">Featured Products</h2>
+        <p class="section-sub">
+          Our most-loved leather goods — crafted for the modern explorer.
+        </p>
+      </div>
+
+      <ul class="product-grid" role="list">
+
+        <!-- Product 1: Wallet -->
+        <li class="product-card" role="listitem">
+          <a href="../catalog/wallet.html" class="product-img-link"
+             aria-label="View Classic Leather Bifold Wallet details">
+            <div class="product-img-wrap">
+              <img
+                src="../static/images/wallet.jpg"
+                alt="Classic Leather Bifold Wallet in Cognac Brown, open showing card slots"
+                class="product-img"
+                loading="lazy"
+              />
+              <span class="product-badge product-badge--bestseller">Best Seller</span>
+            </div>
+          </a>
+          <div class="product-info">
+            <div class="product-rating" aria-label="Rated 4.9 out of 5, 47 reviews">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <span class="rating-count">(47)</span>
+            </div>
+            <h3 class="product-name">
+              <a href="../catalog/wallet.html">Classic Leather Bifold Wallet</a>
+            </h3>
+            <p class="product-variant">Cognac Brown · Full-Grain Leather</p>
+            <div class="product-footer">
+              <span class="product-price">$49.99</span>
+              <button
+                class="btn btn--add-cart"
+                onclick="addToCart('Classic Leather Bifold Wallet', 49.99)"
+                aria-label="Add Classic Leather Bifold Wallet to cart"
+              >Add to Cart</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Product 2: Bag -->
+        <li class="product-card" role="listitem">
+          <a href="../catalog/bag.html" class="product-img-link"
+             aria-label="View Heritage Leather Duffel Bag details">
+            <div class="product-img-wrap">
+              <img
+                src="../static/images/bag.jpg"
+                alt="Heritage Leather Duffel Bag in Dark Brown"
+                class="product-img"
+                loading="lazy"
+              />
+              <span class="product-badge product-badge--new">New</span>
+            </div>
+          </a>
+          <div class="product-info">
+            <div class="product-rating" aria-label="Rated 4.8 out of 5, 23 reviews">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <span class="rating-count">(23)</span>
+            </div>
+            <h3 class="product-name">
+              <a href="../catalog/bag.html">Heritage Leather Duffel Bag</a>
+            </h3>
+            <p class="product-variant">Dark Brown · Vegetable-Tanned</p>
+            <div class="product-footer">
+              <span class="product-price">$189.99</span>
+              <button
+                class="btn btn--add-cart"
+                onclick="addToCart('Heritage Leather Duffel Bag', 189.99)"
+                aria-label="Add Heritage Leather Duffel Bag to cart"
+              >Add to Cart</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Product 3: Keychain -->
+        <li class="product-card" role="listitem">
+          <a href="../catalog/keychain.html" class="product-img-link"
+             aria-label="View Leather Keychain details">
+            <div class="product-img-wrap">
+              <img
+                src="../static/images/keychain.jpg"
+                alt="Handcrafted leather keychain in tan"
+                class="product-img"
+                loading="lazy"
+              />
+            </div>
+          </a>
+          <div class="product-info">
+            <div class="product-rating" aria-label="Rated 4.7 out of 5, 31 reviews">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <span class="rating-count">(31)</span>
+            </div>
+            <h3 class="product-name">
+              <a href="../catalog/keychain.html">Leather Keychain</a>
+            </h3>
+            <p class="product-variant">Tan · Full-Grain Leather</p>
+            <div class="product-footer">
+              <span class="product-price">$14.99</span>
+              <button
+                class="btn btn--add-cart"
+                onclick="addToCart('Leather Keychain', 14.99)"
+                aria-label="Add Leather Keychain to cart"
+              >Add to Cart</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Product 4: Belt -->
+        <li class="product-card" role="listitem">
+          <a href="../catalog/belt.html" class="product-img-link"
+             aria-label="View Leather Belt details">
+            <div class="product-img-wrap">
+              <img
+                src="../static/images/belt.jpg"
+                alt="Cognac leather belt on a dark background"
+                class="product-img"
+                loading="lazy"
+              />
+            </div>
+          </a>
+          <div class="product-info">
+            <div class="product-rating" aria-label="Rated 4.6 out of 5, 18 reviews">
+              <span class="stars" aria-hidden="true">★★★★☆</span>
+              <span class="rating-count">(18)</span>
+            </div>
+            <h3 class="product-name">
+              <a href="../catalog/belt.html">Woven Leather Belt</a>
+            </h3>
+            <p class="product-variant">Cognac · Braided Full-Grain</p>
+            <div class="product-footer">
+              <span class="product-price">$64.99</span>
+              <button
+                class="btn btn--add-cart"
+                onclick="addToCart('Woven Leather Belt', 64.99)"
+                aria-label="Add Woven Leather Belt to cart"
+              >Add to Cart</button>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="view-all-wrap">
+        <a href="catalog.html" class="btn btn--outline">View All Products →</a>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------
+         ABOUT STRIP — Brand story highlight
+         Centered single-column text
+    ---------------------------------------------------------- -->
+    <section class="about-strip" id="about" aria-labelledby="about-heading">
+      <div class="about-content">
+        <p class="about-eyebrow">Our Story</p>
+        <h2 id="about-heading" class="about-heading">
+          Crafted for the Modern Explorer
+        </h2>
+        <p class="about-text">
+          SGnG was built on a simple belief: the things you carry every day
+          should be as durable and authentic as the life you live. Every product
+          is hand-selected, quality-tested, and crafted to last a lifetime.
+          No shortcuts. No compromises. Just honest goods.
+        </p>
+        <a href="about.html" class="btn btn--primary">Learn More About Us</a>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ============================================================
+       FOOTER
+       Flexbox: brand | nav columns | newsletter — horizontal
+       Collapses to single column on mobile
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+
+      <!-- Brand block -->
+      <div class="footer-brand">
+        <p class="footer-logo-text">SGnG</p>
+        <p class="footer-tagline">
+          Strubell Goods &amp; Gear
+          <em>Crafted for the Modern Explorer</em>
+        </p>
+      </div>
+
+      <!-- Nav link columns -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Shop</h4>
+          <ul role="list">
+            <li><a href="catalog.html">All Products</a></li>
+            <li><a href="catalog.html">Wallets</a></li>
+            <li><a href="catalog.html">Bags</a></li>
+            <li><a href="catalog.html">Accessories</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Company</h4>
+          <ul role="list">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Craftsmanship</a></li>
+            <li><a href="about.html">Sustainability</a></li>
+            <li><a href="about.html">Press</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Support</h4>
+          <ul role="list">
+            <li><a href="cart.html">Shipping &amp; Returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+      </nav>
+
+      <!-- Newsletter signup form -->
+      <div class="footer-newsletter">
+        <h4 class="footer-col-heading">Stay in the Loop</h4>
+        <p>New arrivals, stories, and gear — straight to your inbox.</p>
+        <form
+          class="newsletter-form"
+          action="#"
+          method="post"
+          aria-label="Email newsletter signup"
+          onsubmit="return false;"
+        >
+          <label for="newsletterEmail" class="sr-only">Email address</label>
+          <input
+            type="email"
+            id="newsletterEmail"
+            name="email"
+            placeholder="your@email.com"
+            class="newsletter-input"
+            required
+            autocomplete="email"
+          />
+          <button type="submit" class="btn btn--primary newsletter-btn">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div><!-- /footer-container -->
+
+    <!-- Footer bottom bar -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Strubell Goods &amp; Gear. All rights reserved.</p>
+      <p>FSDI 115 &ndash; Interaction Design &middot; Tim Strubell &middot; Fall 2026</p>
+    </div>
+
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+       Load cart.js and theme.js from static/js/
+       "../" goes up from pages/ to the project root
+  ============================================================ -->
+  <script src="../static/js/cart.js"></script>
+  <script src="../static/js/theme.js"></script>
+
+  <!-- Mobile nav toggle — inline, no framework needed -->
+  <script>
+    (function () {
+      'use strict';
+
+      var toggle = document.getElementById('navToggle');
+      var menu   = document.getElementById('navMenu');
+
+      if (!toggle || !menu) return;
+
+      // Open / close hamburger menu
+      toggle.addEventListener('click', function () {
+        var isOpen = menu.classList.toggle('nav-menu--open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.classList.toggle('nav-toggle--open', isOpen);
+        // Prevent body scroll when menu is open
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      });
+
+      // Close when any nav link is clicked
+      menu.querySelectorAll('.nav-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          menu.classList.remove('nav-menu--open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.classList.remove('nav-toggle--open');
+          document.body.style.overflow = '';
+        });
+      });
+
+      // Close when clicking outside the nav
+      document.addEventListener('click', function (e) {
+        if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+          menu.classList.remove('nav-menu--open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.classList.remove('nav-toggle--open');
+          document.body.style.overflow = '';
+        }
+      });
+
+      // Close on Escape key
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          menu.classList.remove('nav-menu--open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.classList.remove('nav-toggle--open');
+          document.body.style.overflow = '';
+        }
+      });
+
+    })();
+
+    // Connects "Add to Cart" buttons on this page to cart.js
+    // cart.js must expose a global addToCart(name, price) function
+    function addToCart(name, price) {
+      if (typeof window.addToCartItem === 'function') {
+        window.addToCartItem(name, price);
+      } else {
+        // Fallback: basic localStorage implementation
+        var cart = JSON.parse(localStorage.getItem('sgng-cart') || '[]');
+        var existing = cart.find(function(i){ return i.name === name; });
+        if (existing) {
+          existing.qty += 1;
+        } else {
+          cart.push({ name: name, price: price, qty: 1 });
+        }
+        localStorage.setItem('sgng-cart', JSON.stringify(cart));
+        var total = cart.reduce(function(sum, i){ return sum + i.qty; }, 0);
+        var badge = document.getElementById('cartCount');
+        if (badge) badge.textContent = total;
+        alert(name + ' added to cart!');
+      }
+    }
+  </script>
+
+</body>
+</html>
