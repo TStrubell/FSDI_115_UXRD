@@ -1,0 +1,28 @@
+SGnG LO-FI WIREFRAME — SCREEN 4: CART
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+==========================================================
+
+┌────────────────────────────────────────────────────────┐
+│  NAV BAR                                               │
+└────────────────────────────────────────────────────────┘
+
+[H1: Shopping Cart]
+
+┌──────────────────────────────────┬─────────────────────┐
+│  LINE ITEMS (60%)                │  ORDER SUMMARY      │
+│                                  │  (40%)              │
+│  [img] Product Name | [- 1 +] $  │                     │
+│  ──────────────────────────────  │  Subtotal:  $       │
+│  [img] Product Name | [- 1 +] $  │  Shipping: Free     │
+│                    [remove link] │  ─────────────      │
+│                                  │  Total:     $       │
+│                                  │                     │
+│                                  │  [CHECKOUT BTN]     │
+│                                  │  Continue Shopping  │
+└──────────────────────────────────┴─────────────────────┘
+
+EMPTY STATE (conditional):
+          [Your cart is empty.]
+          [START SHOPPING BTN]
+
+[FOOTER]

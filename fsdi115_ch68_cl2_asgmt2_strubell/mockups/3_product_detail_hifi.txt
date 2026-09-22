@@ -1,0 +1,27 @@
+SGnG HI-FI MOCKUP SPEC — SCREEN 3: PRODUCT DETAIL (Wallet)
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+=====================================================
+
+VIEWPORT: 1440px primary
+
+--- NAV BAR --- (sticky, same structure)
+
+--- PRODUCT DETAIL LAYOUT --- (2-col Flexbox, centered, max-width 1000px, gap 48px)
+
+LEFT COLUMN (50%):
+  Image:        wallet.jpg, border-radius 10px, width 100%, shadow
+
+RIGHT COLUMN (50%):
+  Back Link:    "← Back to Catalog" — Helvetica Neue, 13px, #9A8F82, hover #C17A3A
+  H1:           "Classic Leather Bifold Wallet" — Georgia, 32px, #F5F0E8
+  Price:        "$89.00" — Courier New, 28px, #C17A3A, font-weight bold
+  Material:     Helvetica Neue, 15px, #9A8F82 — "Full-grain vegetable-tanned leather"
+  Description:  Helvetica Neue, 16px, #F5F0E8, line-height 1.7, max 420px
+  Features:     Bulleted list (4 items) — Helvetica Neue, 15px, #F5F0E8
+    • 6 card slots + 2 cash compartments
+    • Full-grain leather, ages to a rich patina
+    • Slim profile — fits any front pocket
+    • Handstitched reinforced seams
+  Add to Cart:  Full-width button — bg #C17A3A, text #1C1A17, 16px bold, height 52px, border-radius 6px
+
+--- FOOTER --- (same)

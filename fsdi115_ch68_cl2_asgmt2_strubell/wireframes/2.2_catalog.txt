@@ -1,0 +1,29 @@
+SGnG LO-FI WIREFRAME — SCREEN 2: CATALOG PAGE
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+=====================================================
+
+┌───────────────────────────────────────────────────────┐
+│  NAV BAR (Shop = active/underlined)                   │
+│  [LOGO]  [Collections]  [*Shop*]  [Our Story]  [🛒]  │
+└───────────────────────────────────────────────────────┘
+
+          [H1: All Products]
+       [4 premium leather goods]
+
+     ┌────────────────┐   ┌────────────────┐
+     │       X        │   │       X        │
+     │   Product 1    │   │   Product 2    │
+     │     $00.00     │   │    $00.00      │
+     │ [Detail][Cart] │   │ [Detail][Cart] │
+     └────────────────┘   └────────────────┘
+
+     ┌────────────────┐   ┌────────────────┐
+     │       X        │   │       X        │
+     │   Product 3    │   │   Product 4    │
+     │    $00.00      │   │    $00.00      │
+     │ [Detail][Cart] │   │ [Detail][Cart] │
+     └────────────────┘   └────────────────┘
+
+         [WATERMARK BG — logo opacity 8%]
+
+[FOOTER — same as Home]

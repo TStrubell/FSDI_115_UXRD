@@ -1,0 +1,36 @@
+SGnG HI-FI MOCKUP SPEC — SCREEN 5: ORDER CONFIRMATION
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+=====================================================
+
+--- NAV BAR ---
+
+--- CONFIRMATION HERO (centered, padding 64px 0 32px) ---
+  Checkmark:    ✓ — Georgia, 96px, #C17A3A, centered
+  H1:           "Order Confirmed!" — Georgia, 32px, #1C1A17 (on cream bg) or #F5F0E8
+  Order #:      "Order #SGnG-20260918-0042" — Courier New, 16px, #C17A3A
+
+--- 2-COLUMN CARDS (gap 24px, max-width 800px, centered) ---
+
+LEFT CARD (#2A2520, border-radius 8px, padding 24px):
+  Title:        "Order Summary" — Georgia, 18px, #F5F0E8
+  Thumbnail:    wallet.jpg 60x60px
+  Product:      "Classic Leather Bifold Wallet" — Helvetica Neue, 15px, #F5F0E8
+  Qty:          "Qty: 1"
+  Total:        "$89.00" — Courier New, #C17A3A
+
+RIGHT CARD (#2A2520, border-radius 8px, padding 24px):
+  Title:        "Shipping Details" — Georgia, 18px, #F5F0E8
+  Name:         Tim Strubell
+  Address:      [placeholder address]
+  Method:       "Standard Shipping (Free)"
+  Est. Delivery:"September 21–24, 2026"
+
+--- EMAIL NOTICE ---
+  "A confirmation has been sent to your email address."
+  Helvetica Neue, 14px, #9A8F82, centered, padding 24px 0
+
+--- DUAL CTA ROW (centered, gap 16px) ---
+  Primary:      "Track Your Order" — bg #C17A3A, text #1C1A17, padding 14px 32px
+  Secondary:    "Continue Shopping" — amber text link, no background
+
+--- FOOTER ---

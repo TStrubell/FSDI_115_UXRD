@@ -1,0 +1,72 @@
+SGnG — USER FLOW DIAGRAM DESCRIPTION
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+=====================================================
+[For use as text-based flow reference; full visual in Figma]
+
+START
+  │
+  ▼
+[HOME PAGE]
+  │
+  ├──────────────────────────────────────┐
+  │ Click "SHOP NOW" or "Collections"    │ Click product card in "Featured Products"
+  ▼                                      ▼
+[CATALOG PAGE]                     [PRODUCT DETAIL PAGE]
+  │                                      │
+  │ Click "Details"                      │
+  ▼                                      │
+[PRODUCT DETAIL PAGE] ◄────────────────┘
+  │
+  │ Click "Add to Cart"
+  ▼
+[CART PAGE]
+  │
+  ├─── Item removed → [EMPTY CART STATE] → "Start Shopping" → [CATALOG PAGE]
+  │
+  │ Click "Proceed to Checkout"
+  ▼
+[ORDER CONFIRMATION PAGE]
+  │
+  ├─── "Track Your Order" → [External Tracking]
+  │
+  └─── "Continue Shopping" → [HOME PAGE] or [CATALOG PAGE]
+
+END
+
+-----------------------------------------------------
+DECISION NODES
+-----------------------------------------------------
+DP1 @ Home:
+  Choice A → Nav "Shop" → Catalog
+  Choice B → Featured Product card → Product Detail (skip Catalog)
+  Choice C → Category card → Catalog (filtered)
+
+DP2 @ Catalog:
+  Choice A → "Details" → Product Detail
+  Choice B → "Add to Cart" → Cart (skip detail)
+  Choice C → Back nav → Home
+
+DP3 @ Cart:
+  Choice A → "Proceed to Checkout" → Confirmation (happy path)
+  Choice B → "Continue Shopping" → Catalog
+  Choice C → Remove item(s) → Empty cart state
+
+-----------------------------------------------------
+SCREEN INVENTORY
+-----------------------------------------------------
+  S1 — Home Page          pages/home.html
+  S2 — Catalog Page       pages/catalog.html
+  S3 — Product Detail     catalog/wallet.html (primary test screen)
+  S4 — Cart               pages/cart.html
+  S5 — Confirmation       Figma only (not yet in code for Asgmt 2)
+
+-----------------------------------------------------
+FIGMA PROTOTYPE CONNECTIONS
+-----------------------------------------------------
+  Home → Catalog:          "SHOP NOW" button / "Shop" nav link
+  Home → Product Detail:   Featured product "Details" button
+  Catalog → Product Detail:"Details" button on any card
+  Catalog → Cart:          "Add to Cart" button on any card
+  Product Detail → Cart:   "Add to Cart" button
+  Cart → Confirmation:     "Proceed to Checkout" button
+  Confirmation → Home:     "Continue Shopping" text link

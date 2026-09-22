@@ -1,9 +1,0 @@
-Product Image
-
-Product Name
-
-Price
-
-Description
-
-Add To Cart Button

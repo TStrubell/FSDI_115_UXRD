@@ -1,0 +1,61 @@
+SGnG HI-FI MOCKUP SPEC — SCREEN 1: HOME
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+=====================================================
+
+VIEWPORT: 1440px desktop (primary); responsive breakpoints at 1024px, 768px, 480px
+
+--- NAV BAR ---
+Background:       #2A2520 (surface)
+Height:           72px
+Position:         sticky top
+Logo Mark:        "SGnG" — Georgia, 24px, #C17A3A
+Logo Sub:         "Strubell Goods & Gear" — Helvetica Neue, 11px, #9A8F82, uppercase
+Nav Links:        "Collections | Shop | Our Story" — Helvetica Neue, 14px, #F5F0E8
+Cart Icon:        SVG, stroke #F5F0E8, badge fill #C17A3A
+Theme Toggle:     🌙 emoji button, transparent bg
+
+--- HERO SECTION ---
+Background:       #1C1A17 with subtle dark overlay
+Min-height:       600px
+Layout:           2-col Flexbox, align-items center
+
+LEFT COLUMN (50%):
+  Label:          "NEW COLLECTION — FALL 2026" — Helvetica Neue, 13px, #C17A3A, uppercase, letter-spacing 0.1em
+  H1:             "Goods & Gear for the Modern Explorer" — Georgia, 48px, #F5F0E8, line-height 1.2
+  Body:           Helvetica Neue, 16px, #9A8F82, max-width 480px
+  CTA Buttons (row):
+    Primary:      "SHOP NOW" — bg #C17A3A, text #1C1A17, 14px bold, padding 14px 32px, border-radius 4px
+    Secondary:    "OUR STORY" — bg transparent, border 1px #C17A3A, text #C17A3A, same size
+
+RIGHT COLUMN (50%):
+  Image:          wallet.jpg — max-width 480px, border-radius 8px, subtle drop shadow
+
+--- TRUST STRIP ---
+Background:       #2A2520
+4 columns, centered, padding 24px 0
+Icon + label:     Helvetica Neue, 13px, #9A8F82
+
+--- CATEGORIES (Shop by Collection) ---
+3 cards, equal width, gap 24px
+Each card:        image fill, overlay gradient (rgba 0,0,0,0.4), label Georgia 22px #F5F0E8, count 13px #9A8F82
+Hover:            scale 1.03, amber border 2px
+
+--- FEATURED PRODUCTS ---
+4-column grid, gap 24px
+Each card bg:     #2A2520, border-radius 8px, padding 16px
+  Image:          full-width, border-radius 6px
+  Product Name:   Georgia, 16px, #F5F0E8
+  Price:          Courier New, 18px, #C17A3A, bold
+  "BEST SELLER" badge: bg #C17A3A, text #1C1A17, 10px uppercase (Wallet only)
+  Button row:     "Details" (outline amber) + "Add to Cart" (fill amber)
+
+--- ABOUT STRIP ---
+2-col: text left, image right
+Text:  Georgia 28px heading + Helvetica Neue 16px body, max-width 520px
+CTA:   "LEARN MORE ABOUT US" — amber text link
+
+--- FOOTER ---
+Background:       #2A2520
+4 columns:        Logo+tagline | Shop links | Company links | Newsletter
+Newsletter input: border 1px #3A3530, bg #1C1A17, text #F5F0E8, button bg #C17A3A
+Copyright:        Helvetica Neue, 12px, #9A8F82

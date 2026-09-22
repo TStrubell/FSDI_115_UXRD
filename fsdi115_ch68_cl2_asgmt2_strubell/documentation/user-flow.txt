@@ -1,44 +1,81 @@
-SGNG CUSTOMER USER FLOW
+SGnG USER FLOW — NARRATIVE DESCRIPTION
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+=====================================================
 
-START
+FLOW TITLE: First-Time Buyer — Classic Leather Wallet Purchase
 
-↓
-Home Page
+PLATFORM: Desktop Web (1440px primary viewport)
+ENTRY POINT: Direct URL / Organic Search Result
 
-↓
-Browse Catalog
+-----------------------------------------------------
+STEP 1: HOME PAGE
+-----------------------------------------------------
+Screen: Home (pages/home.html)
+User Action: Lands on page, reads hero headline —
+  "Goods & Gear for the Modern Explorer"
+Available Paths:
+  A → Clicks "SHOP NOW" button → goes to Catalog (Step 2)
+  B → Scrolls to Featured Products, clicks "Details" on wallet → goes to Product Detail (Step 3)
+  C → Clicks "Collections" nav link → goes to Catalog (Step 2)
+Design Elements Visible: Hero, trust strip, 3 category cards, 4 featured products, about strip, footer
 
-↓
-Select Product
+-----------------------------------------------------
+STEP 2: CATALOG PAGE
+-----------------------------------------------------
+Screen: Catalog (pages/catalog.html)
+User Action: Views all 4 products in 2x2 grid
+Available Paths:
+  A → Clicks "Details" on Classic Leather Wallet → Product Detail (Step 3)
+  B → Clicks "Add to Cart" directly → Cart (Step 4) [skips detail page]
+  C → Clicks nav "Collections" → back to Home (Step 1)
+Products Displayed:
+  - Classic Leather Bifold Wallet — $89.00
+  - Heritage Leather Belt — $120.00
+  - MD Minimalist Keychain — $29.00
+  - Expedition Travel Bag — $349.00
 
-↓
-View Product Details
+-----------------------------------------------------
+STEP 3: PRODUCT DETAIL PAGE
+-----------------------------------------------------
+Screen: Product Detail (catalog/wallet.html)
+User Action: Reads product description, views leather texture photo
+Available Paths:
+  A → Clicks "Add to Cart" → Cart (Step 4)
+  B → Clicks browser back / "Shop" nav → Catalog (Step 2)
+Key Info Shown: Price, material description, features list, care instructions, Add to Cart CTA
 
-↓
-Add To Cart
+-----------------------------------------------------
+STEP 4: CART PAGE
+-----------------------------------------------------
+Screen: Cart (pages/cart.html)
+User Action: Reviews order — product, quantity, price, shipping
+Available Paths:
+  A → Clicks "Proceed to Checkout" → Confirmation (Step 5) [HAPPY PATH]
+  B → Clicks "Continue Shopping" → Catalog (Step 2)
+  C → Removes item → Empty cart state shown
+Cart Contents Shown: Item image, name, qty, unit price, subtotal, shipping ($0 free over $75), total
 
-↓
-View Cart
+-----------------------------------------------------
+STEP 5: ORDER CONFIRMATION PAGE
+-----------------------------------------------------
+Screen: Confirmation (pages/cart.html confirmation state / separate screen in Figma)
+User Action: Sees success state after checkout
+Available Paths:
+  A → Clicks "Track Your Order" → (external tracking link placeholder)
+  B → Clicks "Continue Shopping" → Home or Catalog
+Visual: Large amber checkmark, "Order Confirmed!" headline, order number in amber,
+        Order Summary card + Shipping Details card, confirmation email notice
 
-↓
-Checkout
+-----------------------------------------------------
+DECISION POINTS SUMMARY
+-----------------------------------------------------
+DP1: Home → Browse nav links OR scroll to featured products
+DP2: Catalog → Select any product OR return to home
+DP3: Cart → Checkout OR continue shopping OR empty cart state
 
-↓
-Order Confirmation
-
-↓
-END
-
-Alternative Path
-
-Home
- ↓
-Search Products
- ↓
-Product Details
- ↓
-Add To Cart
- ↓
-Checkout
- ↓
-Confirmation
+-----------------------------------------------------
+ERROR / EDGE STATES
+-----------------------------------------------------
+- Empty Cart: "Your cart is empty" with CTA → Catalog
+- Out of Stock: Add to Cart disabled, "Notify Me" shown
+- Checkout Validation: Inline field errors, user stays on Cart

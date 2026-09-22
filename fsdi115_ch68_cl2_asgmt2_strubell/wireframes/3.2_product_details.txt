@@ -1,0 +1,26 @@
+SGnG LO-FI WIREFRAME — SCREEN 3: PRODUCT DETAIL
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+=====================================================
+
+┌───────────────────────────────────────────────────┐
+│  NAV BAR                                          │
+└───────────────────────────────────────────────────┘
+
+← Back to Catalog
+
+┌──────────────────────┬────────────────────────────┐
+│                      │ [Product Name — H1]        │
+│                      │ $00.00                     │
+│         X            │                            │
+│   (product image)    │ [Material line]            │
+│                      │ [Description — 3 lines]    │
+│                      │                            │
+│                      │ • Feature 1                │
+│                      │ • Feature 2                │
+│                      │ • Feature 3                │
+│                      │ • Feature 4                │
+│                      │                            │
+│                      │ [ADD TO CART — full width] │
+└──────────────────────┴────────────────────────────┘
+
+[FOOTER]

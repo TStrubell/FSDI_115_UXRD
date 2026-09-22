@@ -1,7 +1,0 @@
-Cart Items
-
-Quantity Controls
-
-Order Summary
-
-Checkout Button

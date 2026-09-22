@@ -1,0 +1,25 @@
+SGnG LO-FI WIREFRAME — SCREEN 5: ORDER CONFIRMATION
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+=====================================================
+
+┌───────────────────────────────────────────────────┐
+│  NAV BAR                                          │
+└───────────────────────────────────────────────────┘
+
+                  [✓ Checkmark]
+                [Order Confirmed!]
+             [Order #SGnG-00000-0000]
+
+     ┌──────────────────┐  ┌──────────────────┐
+     │  ORDER SUMMARY   │  │ SHIPPING DETAILS │
+     │  [img] Product   │  │ Name             │
+     │  Qty: 1          │  │ Address          │
+     │  Total: $00.00   │  │ Method           │
+     │                  │  │ Est. Delivery    │
+     └──────────────────┘  └──────────────────┘
+
+   [A confirmation has been sent to your email.]
+
+     [TRACK YOUR ORDER] [Continue Shopping]
+
+[FOOTER]

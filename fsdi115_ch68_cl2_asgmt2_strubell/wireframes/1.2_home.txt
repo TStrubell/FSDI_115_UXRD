@@ -1,0 +1,56 @@
+SGnG LO-FI WIREFRAME — SCREEN 1: HOME PAGE
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+=====================================================
+[Grayscale — no color, no brand fonts. Structure only.]
+
+┌─────────────────────────────────────────────────────┐
+│  NAV BAR                                            │
+│  [LOGO]       [Collections] [Shop] [Our Story] [🛒]│
+└─────────────────────────────────────────────────────┘
+
+┌──────────────────────────────┬──────────────────────┐
+│  HERO — LEFT                 │  HERO — RIGHT        │
+│  [label text]                │                      │
+│  [H1 — 2 lines headline]     │  ┌──────────────┐    │
+│  [body text — 2 lines]       │  │      X       │    │
+│  [BTN PRIMARY] [BTN SECOND]  │  │   (product   │    │
+│                              │  │    image)    │    │
+│                              │  └──────────────┘    │
+└──────────────────────────────┴──────────────────────┘
+
+┌──────────┬──────────┬──────────┬──────────┐
+│  [icon]  │  [icon]  │  [icon]  │  [icon]  │
+│ Trust 1  │ Trust 2  │ Trust 3  │ Trust 4  │
+└──────────┴──────────┴──────────┴──────────┘
+
+[SECTION LABEL: Shop by Collection]
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+│      X      │ │      X      │ │      X      │
+│  [overlay]  │ │  [overlay]  │ │  [overlay]  │
+│  Category 1 │ │  Category 2 │ │  Category 3 │
+│  N products │ │  N products │ │  N products │
+└─────────────┘ └─────────────┘ └─────────────┘
+
+[SECTION LABEL: Featured Products]
+┌───────┐ ┌───────┐ ┌───────┐ ┌───────┐
+│   X   │ │   X   │ │   X   │ │   X   │
+│ Name  │ │ Name  │ │ Name  │ │ Name  │
+│ $0.00 │ │ $0.00 │ │ $0.00 │ │ $0.00 │
+│[D][C] │ │[D][C] │ │[D][C] │ │[D][C] │
+└───────┘ └───────┘ └───────┘ └───────┘
+              [VIEW ALL PRODUCTS →]
+
+┌─────────────────────┬───────────────────┐
+│  ABOUT — TEXT BLOCK │      X (image)    │
+│  [H2]               │                   │
+│  [body — 3 lines]   │                   │
+│  [LEARN MORE BTN]   │                   │
+└─────────────────────┴───────────────────┘
+
+┌──────────┬──────────┬──────────┬────────────────┐
+│  LOGO    │  SHOP    │  COMPANY │  NEWSLETTER    │
+│  tagline │  • link  │  • link  │  [email input] │
+│          │  • link  │  • link  │  [SUBSCRIBE]   │
+│          │  • link  │  • link  │                │
+└──────────┴──────────┴──────────┴────────────────┘
+© 2026 Strubell Goods & Gear

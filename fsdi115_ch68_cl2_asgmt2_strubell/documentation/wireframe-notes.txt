@@ -1,0 +1,135 @@
+SGnG WIREFRAME ANNOTATIONS — SCREEN-BY-SCREEN NOTES
+FSDI 115 | Tim Strubell | Assignment 2 | Fall 2026
+=====================================================
+
+WIREFRAME APPROACH
+------------------
+All wireframes are grayscale lo-fi, created in Figma after initial pencil thumbnail sketches.
+No brand colors, no typography — only structure, hierarchy, and interaction annotation.
+Grid: 12-column, 1440px desktop. Mobile breakpoint noted where applicable.
+
+-----------------------------------------------------
+SCREEN 1 — HOME (wireframes/1.2-home.txt)
+-----------------------------------------------------
+Layout Top → Bottom:
+  [NAV BAR]
+    - Logo left (text placeholder)
+    - Nav links center: Collections | Shop | Our Story
+    - Cart icon + badge right
+    - Theme toggle far right
+
+  [HERO SECTION — 2 column Flexbox]
+    - LEFT: Headline text block (3 lines) + 2 CTA buttons side by side
+    - RIGHT: Large product image placeholder (wallet)
+    - Full-width dark overlay background
+
+  [TRUST STRIP — 4 icons in a row]
+    - Free Shipping | Guarantee | Secure Checkout | Free Returns
+    - Equal width columns, centered text + icon placeholder
+
+  [SHOP BY COLLECTION — 3 cards]
+    - Equal-width cards with image placeholder, label overlay, product count
+    - Hover state: slight scale + amber border
+
+  [FEATURED PRODUCTS — 4-column grid]
+    - Each card: image placeholder (X box), product name, price, 2 buttons
+    - "VIEW ALL PRODUCTS" CTA below grid, centered
+
+  [ABOUT STRIP — 2 column]
+    - Left: brand copy text block
+    - Right: image placeholder
+
+  [FOOTER — 4 columns]
+    - Column 1: Logo + tagline
+    - Column 2: Shop links
+    - Column 3: Company links
+    - Column 4: Newsletter email input + Subscribe button
+
+DESIGN RATIONALE NOTES:
+  - Hero is 2-col Flexbox: text left persuades, product right visualizes
+  - Trust strip immediately below hero to counter purchase hesitation
+  - 4-column product grid matches Bellroy benchmark (competitive analysis)
+
+-----------------------------------------------------
+SCREEN 2 — CATALOG (wireframes/2.2-catalog.txt)
+-----------------------------------------------------
+Layout Top → Bottom:
+  [NAV BAR] — same as Home, "Shop" link marked active (underline)
+
+  [PAGE HEADER]
+    - H1: "All Products" centered
+    - Subheading: product count "4 products"
+
+  [PRODUCT GRID — 2x2]
+    - Each card: image placeholder, product name, price, Details + Add to Cart buttons
+    - Watermark background (logo opacity 10%) centered in grid
+
+  [FOOTER] — same as Home
+
+DESIGN RATIONALE NOTES:
+  - 2x2 grid chosen over 4-column: allows larger product images, better texture visibility
+  - Watermark background brand reinforcement without distraction
+
+-----------------------------------------------------
+SCREEN 3 — PRODUCT DETAIL (wireframes/3.2-product_details.txt)
+-----------------------------------------------------
+Layout Top → Bottom:
+  [NAV BAR] — same sticky nav
+
+  [PRODUCT DETAIL — 2 column Flexbox]
+    - LEFT: Large product image (fills column)
+    - RIGHT: Product name (H1), price (amber), material description,
+             features list (bulleted), Add to Cart button (full width), back link
+
+  [FOOTER] — same
+
+DESIGN RATIONALE NOTES:
+  - Left image / right text mirrors natural reading pattern (F-pattern scan)
+  - Price in amber draws eye immediately after product name
+
+-----------------------------------------------------
+SCREEN 4 — CART (wireframes/4.2-cart.txt)
+-----------------------------------------------------
+Layout Top → Bottom:
+  [NAV BAR]
+
+  [CART LAYOUT — 2 column]
+    - LEFT (60%): Line item row — image thumb | product name | qty stepper | remove link | price
+    - RIGHT (40%): Order summary card — Subtotal, Shipping, Total, Proceed to Checkout button
+
+  [EMPTY STATE] (conditional)
+    - Centered message: "Your cart is empty"
+    - CTA button: "Start Shopping" → links to Catalog
+
+DESIGN RATIONALE NOTES:
+  - 60/40 split gives item list breathing room while keeping summary sticky and visible
+  - Qty stepper added post-usability test (P4 feedback)
+
+-----------------------------------------------------
+SCREEN 5 — CONFIRMATION (wireframes/5.2-confirmation.txt)
+-----------------------------------------------------
+Layout Top → Bottom:
+  [NAV BAR]
+
+  [CONFIRMATION HERO — centered]
+    - Large amber checkmark icon (96pt)
+    - H1: "Order Confirmed!"
+    - Order number in amber monospace
+
+  [2-COLUMN CARDS]
+    - LEFT card: Order Summary (product image, name, qty, total)
+    - RIGHT card: Shipping Details (name, address, method, est. delivery)
+
+  [EMAIL NOTICE]
+    - "A confirmation has been sent to your email address."
+
+  [DUAL CTA ROW]
+    - Primary button: "Track Your Order" (amber fill)
+    - Secondary link: "Continue Shopping" (amber text, no fill)
+
+  [FOOTER]
+
+DESIGN RATIONALE NOTES:
+  - Large centered checkmark gives immediate positive emotional feedback
+  - Dual CTA designed at equal visual weight — no hierarchy conflict
+  - Est. delivery window added post-usability test (all 5 participants requested)
